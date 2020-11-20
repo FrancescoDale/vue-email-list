@@ -9,6 +9,9 @@ var app = new Vue({
     mounted() {
 
         //finchè la lunghezza dell'array è minore di 10, un ciclo for effettua la chiamata e inserisce l'elemento nell'array
+        if (this.mailList.lenght < 10) {
+
+        }
 
 
     }
