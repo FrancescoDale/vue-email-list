@@ -22,4 +22,4 @@ var app = new Vue({
     },
 });
 
-// dopo molte prove e vari fix ( il classico typo in lenght), ho scoperto che l'unico modo per far funzionare il tutto era invertire le cdn nell'head nell'html
+// dopo molte prove e vari fix ( il classico typo in length), ho scoperto che l'unico modo per far funzionare il tutto era invertire le cdn nell'head nell'html
