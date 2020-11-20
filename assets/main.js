@@ -8,16 +8,14 @@ var app = new Vue({
 
     mounted() {
         //finchè la lunghezza dell'array è minore di 10, un ciclo for effettua la chiamata e inserisce l'elemento nell'array
-        if (this.mailList.length < 10) {
-            for (var i = 0; i < 10; i++) {
-                // richiamo da remoto una email
-                axios
-                .get('https://flynn.boolean.careers/exercises/api/random/mail')
-                .then((response) => {
-                    // push nell'array
-                    this.mailList.push(response.data.response);
-                });
-            };
+        for (var i = 0; i < 15; i++) {
+            // richiamo da remoto una email
+            axios
+            .get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then((response) => {
+                // push nell'array
+                this.mailList.push(response.data.response);
+            });
         };
     },
 });
