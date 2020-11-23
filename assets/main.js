@@ -3,12 +3,13 @@ var app = new Vue({
     data : {
         // array di email
         mailList : [],
+        mailNumber : 10,
     },
     methods : {},
 
     mounted() {
         //finchè la lunghezza dell'array è minore di 10, un ciclo for effettua la chiamata e inserisce l'elemento nell'array
-        for (var i = 0; i < 15; i++) {
+        for (var i = 0; i < this.mailNumber; i++) {
             // richiamo da remoto una email
             axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
